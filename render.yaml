@@ -3,6 +3,6 @@ services:
     name: telegram-bot-fdp
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     pythonVersion: 3.10
