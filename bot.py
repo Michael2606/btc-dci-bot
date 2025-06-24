@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("✅ Bot ativo e funcionando!")
+    await update.message.reply_text("✅ Bot funcionando perfeitamente!")
 
 async def main():
     logger.info("⚙️ Iniciando bot...")
