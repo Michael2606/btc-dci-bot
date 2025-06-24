@@ -3,6 +3,6 @@ services:
     name: btc-dci-bot
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install python-telegram-bot==20.6 httpx==0.25.2 pandas numpy ta python-dotenv
     startCommand: python bot.py
     pythonVersion: 3.10
